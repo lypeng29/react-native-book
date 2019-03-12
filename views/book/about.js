@@ -23,7 +23,7 @@ export default class About extends Component {
                     <View style={styles.box}>
                         <Text style={styles.leftTitle}>依赖组件</Text>
                         <Text style={styles.rightContent}>
-                            react-native-elements、react-navigation、
+                            react-native-elements、react-navigation、react-native-webview
                         </Text>
                     </View>
                     <View style={styles.box}>

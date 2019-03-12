@@ -4,6 +4,7 @@ import AboutPage from './book/about';
 import BookPage from './book/index';
 import MoviePage from './movie/index';
 import BookDetailsPage from './book/detail';
+import MovieDetailsPage from './common/webpage';
 import { createStackNavigator, createBottomTabNavigator, createAppContainer } from "react-navigation";
 
 const bottomTabNavigator = createBottomTabNavigator({
@@ -41,6 +42,9 @@ const AppStack = createStackNavigator(
             // navigationOptions: {
             //     title: "图书详情"
             // }
+        },
+        MovieDetails:{
+            screen: MovieDetailsPage,
         }
     }, {
         initialRouteName: "bottomTabNavigator",
