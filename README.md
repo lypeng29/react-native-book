@@ -11,13 +11,14 @@ react-native run-android
 ## 运行效果图
 ![](http://img.lypeng.com/git/2019030801.jpg)
 ![](http://img.lypeng.com/git/2019030802.jpg)
+![](http://img.lypeng.com/git/2019031202.jpg)
+![](http://img.lypeng.com/git/2019031201.jpg)
 
 ## 学习课程地址
 https://ke.qq.com/webcourse/index.html#cid=203313&term_id=100240778&taid=1278010468801073&vid=e1414ek8gbc
 
 ## 欠缺功能
 - header导航条：目前影藏了，设置了header高度为0
-- movie列表与详情
 
 ## 遇到的问题
 ### 1.`preview is unaliveable until after a successful project sync`
@@ -52,3 +53,10 @@ https://ke.qq.com/webcourse/index.html#cid=203313&term_id=100240778&taid=1278010
 yarn add react-native-gesture-handler
 react-native link
 ```
+
+### 9.RNCWebView was not found in the UIManager
+```
+yarn add react-native-webview
+react-native link react-native-webview #安装完成，需要关联下
+```
+关联成功后，需要修改settings.gradle文件中的“\”为“/”，否则路径错误。react-native 0.59已修复

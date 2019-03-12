@@ -65,7 +65,8 @@ export default class index extends Component {
                             {
                                 this.state.data.map((item, i) => {
                                     return (
-                                        <TouchableOpacity style={styles.list} key={i} onPress={() => this.props.navigation.push('Details', { 'bookID': item.id })}>
+                                        <TouchableOpacity style={styles.list} key={i} onPress={() => this.props.navigation.push('Details', { 'bookID': item.id })}
+                                            activeOpacity={0.5}>
                                             <Image source={{ uri: item.images.small }} style={styles.images} />
                                             <View style={styles.rightbox}>
                                                 <Text style={styles.title}>{item.title}</Text>

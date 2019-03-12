@@ -38,7 +38,7 @@ export default class BookDetail extends Component {
                 {
                     bookData != null ?
                     <View>
-                            <Button
+                            {/* <Button
                                 icon={{
                                     name: "assignment-return",
                                     size: 15,
@@ -46,7 +46,7 @@ export default class BookDetail extends Component {
                                 }}
                                 onPress={() => this.props.navigation.goBack()}
                                 title="返回"
-                            />  
+                            />   */}
 
                             <View style={styles.list}>
                                 <Image source={{ uri: bookData.images.small }} style={styles.images} />

@@ -11,7 +11,7 @@ export default class About extends Component {
                     <View style={styles.box}>
                         <Text style={styles.leftTitle}>版本</Text>
                         <Text style={styles.rightContent}>
-                            v1.0_20190308
+                            v1.1_20190312
                         </Text>
                     </View>
                     <View style={styles.box}>

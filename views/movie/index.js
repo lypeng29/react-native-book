@@ -66,23 +66,23 @@ export default class index extends Component {
                                 this.state.data.map((item, i) => {
                                     var actors=[];
                                     for (var i in item.casts) {
-                                        actors.push(item.casts[i].name);
+                                        actors.push(item.casts[i].name + ' ');
                                     }
                                     return (
                                         <TouchableOpacity style={styles.list} key={i} onPress={() => this.props.navigation.push('MovieDetails', { 'movieURL': item.alt })}>
                                             <Image source={{ uri: item.images.small }} style={styles.images} />
                                             <View style={styles.rightbox}>
                                                 <Text style={styles.title}>{item.title}</Text>
-                                                {/* <Text>价格：{item.price ? item.price : '暂无'}</Text> */}
-                                                <Text>演员：{
+                                                {/* <Text>演员：{
                                                     item.casts == '' ? '未知' :
                                                     item.casts.map(
                                                         function (vo) {
                                                             return vo.name + ' ';
                                                         }
                                                     )
-                                                }</Text>
-                                                <Text>{actors}</Text>
+                                                }</Text> */}
+                                                <Text>演员：{actors == '' ? '未知' : actors}</Text>
+
                                                 <Text>类别：{
                                                     item.genres=='' ? '未知' :
                                                     item.genres.map(
